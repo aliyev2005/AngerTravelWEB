@@ -1,0 +1,202 @@
+﻿@model ContactVm 
+
+<!-- START SECTION BANNER -->
+<section class="breadcrumb_section overlay_bg2 page-title-light parallax_bg" data-parallax-bg-image="images/about_bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+                    <h1>Contact</h1>
+                </div>
+                <nav aria-label="breadcrumb" class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION BANNER -->
+<!-- START SECTION CONTACT -->
+<section class="small_pb">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="heading_s3 mb-md-4 text-center animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+                    <h2>@Model.Contacts.Title</h2>
+                </div>
+                <p class="text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s"> @Model.Contacts.content</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="clearfix small_divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="small_padding contact_box">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-md-0 mb-3 text-center">
+                            <div class="icon_box icon_box_style_1 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                                <div class="box_icon mb-3">
+                                    <i class="ti-location-pin"></i>
+                                </div>
+                                <div class="icon_box_content">
+                                    <h5 class="text-uppercase py-md-2">Address</h5>
+                                    <p>@Model.Contacts.Adress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3 text-center">
+                            <div class="icon_box icon_box_style_1 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                                <div class="box_icon mb-3">
+                                    <i class="ti-mobile"></i>
+                                </div>
+                                <div class="icon_box_content">
+                                    <h5 class="text-uppercase py-md-2">Phone</h5>
+                                    <p>@Model.Contacts.Phone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3 text-center">
+                            <div class="icon_box icon_box_style_1 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                                <div class="box_icon mb-3">
+                                    <i class="ti-email"></i>
+                                </div>
+                                <div class="icon_box_content">
+                                    <h5 class="text-uppercase py-md-2">Email</h5>
+                                    <p>@Model.Contacts.Email</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION CONTACT -->
+<!-- START SECTION MAP -->
+<section class="small_pt small_pb">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="contact_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193229.77301255226!2d-74.05531241936525!3d40.823236500441624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f613438663b5%3A0xce20073c8862af08!2sW+123rd+St%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1533565007513" allowfullscreen="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- START SECTION MAP -->
+<!-- START SECTION CONTACT -->
+<section class="small_pt">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading_s3 mb-md-4 text-center animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+                    <h2>Get In touch</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="clearfix small_divider"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="field_form animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <form method="post" name="enq">
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <input required="required" placeholder="Enter Name *" id="first-name" class="form-control" name="name" type="text">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input required="required" placeholder="Enter Email *" id="email" class="form-control" name="email" type="email">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input required="required" placeholder="Enter Phone No. *" id="phone" class="form-control" name="phone" type="phone">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input placeholder="Enter Subject" id="subject" class="form-control" name="subject" type="subject">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <textarea required="required" placeholder="Message *" id="description" class="form-control" name="message" rows="4"></textarea>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <button type="submit" title="Submit Your Message!" class="btn btn-default" id="submitButton" name="submit" value="Submit">Submit</button>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <div id="alert-msg" class="alert-msg text-center"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION CONTACT -->
+<!-- START SECTION CLIENT LOGO -->
+<section class="light_gray_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+                <div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
+                    @foreach(var item in Model.Partner)
+                    {
+                        <div class="item">
+                            <a href="@item.Link"><img src="../assets/images/@item.Logo" alt="cl_logo1" /></a>
+                        </div>
+                    }
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- START SECTION CLIENT LOGO -->
+<!-- START SECTION TESTIMONIAL -->
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="small_padding bg-dark text_white animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+                    <div class="heading_s3 heading_light mb-md-4 text-center">
+                        <h2>Clients Feedback</h2>
+                    </div>
+                    <div class="testimonial_slider testimonial_style5 carousel_slide1 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoHeight="true" data-autoplay="true">
+                    @foreach(var feed in Model.feedbacks)
+                    {
+                        <div class="item">
+                            <div class="testimonial_box">
+                                <div class="testimonial_img">
+                                    <img class="rounded-circle m-auto" src="../assets/images/@feed.Image" alt="user">
+                                </div>
+                                <div class="testi_meta">
+                                    <h6>@feed.Name</h6>
+                                    <span>@feed.Position</span>
+                                    <p>@feed.Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                       
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fancy_style2 animation" data-animation="fadeInRight" data-animation-delay="0.1s">
+                    <img src="images/testimonial_img.jpg" alt="testimonial_img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION TESTIMONIAL -->
